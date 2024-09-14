@@ -1,0 +1,53 @@
+body{
+    width:97vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 98vh;
+}
+#button-box{
+    width:200px;
+    height:80px;
+    background-color: blanchedalmond;
+    border-radius:100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    
+}
+    #rotating-line{
+        height: 50px;
+        width:220px;
+        background: linear-gradient(45deg,red,green);
+        rotate:-30deg;
+        animation-name:rotate;
+        animation-duration: 2s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        position:relative;
+    }
+    @keyframes rotate {
+        0%{
+            transform:rotate(10deg);
+        }
+        100%{
+            transform:rotate(360deg);
+        }
+        
+    }
+
+    button{
+        position:absolute;
+        width:180px;
+        height: 65px;
+        border-radius: 100px;
+        margin-top:80px;
+        border: none;
+        font-size:30px;
+        background-color: aqua;
+    }
+
+
